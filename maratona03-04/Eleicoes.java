@@ -3,14 +3,15 @@ import java.util.Scanner;
 public class Eleicoes {
 	
 	public static void main(String args[]) {
-		Scanner sc = new Scanner(System.in);
-		int voto = sc.nextInt();
+		Scanner sc = new Scanner(System.in);		
 		int vegeta = 0;
 		int kakaroto = 0;
 		int branco = 0;
 		int nulo = 0;
 		int total = 0;
+		int voto;
 		do {
+			voto = sc.nextInt();
 			if (voto == 100) {
 				vegeta++;
 			} else if (voto == 200) {
@@ -21,7 +22,6 @@ public class Eleicoes {
 				nulo++;
 			}
 			total++;
-			voto = sc.nextInt();
 		} while (voto != 0);
 		System.out.println(vegeta+" votos para o candidato Vegeta");
 		System.out.println(kakaroto+" votos para o candidato Kakaroto");
