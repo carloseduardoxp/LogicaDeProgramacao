@@ -4,5 +4,6 @@
 	<classpathentry kind="src" path="srcExemplos"/>
 	<classpathentry kind="src" path="srcURI"/>
 	<classpathentry kind="src" path="maratona13-03"/>
+	<classpathentry kind="src" path="maratona03-04"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
