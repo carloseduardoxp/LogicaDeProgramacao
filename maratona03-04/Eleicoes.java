@@ -8,31 +8,27 @@ public class Eleicoes {
 		int kakaroto = 0;
 		int branco = 0;
 		int nulo = 0;
-		int total = 0;
 		int voto;
 		do {
 			voto = sc.nextInt();
-			if (voto == 100) {
-				vegeta++;
-			} else if (voto == 200) {
-				kakaroto++;
-			} else if (voto == -1) {
-				branco++;
-			} else if (voto == 300) {
-				nulo++;
-			}
-			total++;
+			switch(voto) {
+				case 100: vegeta++; break;
+				case 200: kakaroto++; break;
+				case -1: branco++; break;
+				case 300: nulo++; break;				
+			}									
 		} while (voto != 0);
 		System.out.println(vegeta+" votos para o candidato Vegeta");
 		System.out.println(kakaroto+" votos para o candidato Kakaroto");
 		System.out.println(branco+" votos em branco");
 		System.out.println(nulo+" votos nulo");
-		System.out.println("Total: "+total+" votos");
+		System.out.println("Total: "+(vegeta+kakaroto+branco+nulo)+" votos");
 		if (vegeta > kakaroto) {
 			System.out.println("Candidato Eleito: Vegeta");
 		} else {
 			System.out.println("Candidato Eleito: Kakaroto");
 		}
+		sc.close();
 	}
 
 }
