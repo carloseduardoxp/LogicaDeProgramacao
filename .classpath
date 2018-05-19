@@ -6,5 +6,6 @@
 	<classpathentry kind="src" path="maratona13-03"/>
 	<classpathentry kind="src" path="maratona03-04"/>
 	<classpathentry kind="src" path="provaP1"/>
+	<classpathentry kind="src" path="provaP1Sub"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
